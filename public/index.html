@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United Fund HR System</title>
+  <meta name="description" content="Comprehensive HR Management System">
+  <meta name="theme-color" content="#2563eb">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('Service Worker registered'))
+          .catch(error => console.log('Service Worker registration failed'));
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="/assets/index-tzNcmcCM.js"></script>
+</body>
+</html>
