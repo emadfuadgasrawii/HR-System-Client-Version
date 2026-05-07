@@ -7,8 +7,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "npx ts-node server.ts",
-    "dev": "npx ts-node server.ts"
+    "start": "npx ts-node --transpile-only server.ts",
+    "dev": "npx ts-node --transpile-only server.ts"
   },
   "dependencies": {
     "express": "^4.18.2",
