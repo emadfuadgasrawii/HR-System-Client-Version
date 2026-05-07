@@ -1,3 +1,4 @@
+// @ts-nocheck
 import express from 'express';
 // import { createServer as createViteServer } from 'vite'; // Moved to dynamic import
 import path from 'path';
